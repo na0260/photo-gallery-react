@@ -13,7 +13,7 @@ function App() {
         setSelectedImages((prevImages) => prevImages.concat(imgArr));
         e.target.value = "";
     }
-    const imageUrl = '/src/assets/images'
+
   return (
     <>
         <div className="container mx-auto border-2 rounded-2xl">
@@ -32,7 +32,7 @@ function App() {
                         if (index === 0) {
                             return (
                                 <div key={index} className="col-span-2 row-span-2 border-2 rounded-2xl overflow-hidden relative">
-                                    <img src={image} alt="image-1"/>
+                                    <img src={image} alt={`image-${index}`}/>
                                     <label htmlFor="imageCheckbox"
                                            className="absolute inset-0 flex opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
                                         <input type="checkbox" id="imageCheckbox" className="hidden"/>
