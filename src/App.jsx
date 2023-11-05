@@ -40,6 +40,7 @@ function App() {
         const updatedImages = selectedImages.filter((_, index) => !selectedImageIndexes.includes(index));
         setSelectedImages(updatedImages);
         setSelectedImageIndexes([]);
+        setSelectedImageCount(0);
     };
 
 
