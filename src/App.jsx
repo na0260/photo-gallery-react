@@ -113,7 +113,7 @@ function App() {
                                     {provided.placeholder}
                                     <div className="border-dotted border-2 rounded-2xl overflow-hidden">
                                         <label htmlFor="upload" className="cursor-pointer">
-                                            <img src="./assets/images/add-image.png" alt="add"/>
+                                            <img src="../public/add-image.png" alt="add"/>
                                             <input type="file" id="upload" className="hidden " multiple
                                                    accept="image/png , image/jpeg, image/webp" onChange={selectFile}/>
                                         </label>
