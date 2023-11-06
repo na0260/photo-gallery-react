@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd';
+import addImg from '../public/add-image.png'
 
 function App() {
     const [selectedImages, setSelectedImages] = useState([]);
@@ -113,7 +114,7 @@ function App() {
                                     {provided.placeholder}
                                     <div className="border-dotted border-2 rounded-2xl overflow-hidden">
                                         <label htmlFor="upload" className="cursor-pointer">
-                                            <img src="../../public/add-image.png" alt="add"/>
+                                            <img src={addImg} alt="add"/>
                                             <input type="file" id="upload" className="hidden " multiple
                                                    accept="image/png , image/jpeg, image/webp" onChange={selectFile}/>
                                         </label>
